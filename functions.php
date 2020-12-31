@@ -30,3 +30,19 @@ function animalshelter_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'animalshelter_scripts');
+
+/* Widgets */
+
+function animalshelter_widget_init() {
+    register_sidebar( array(
+        'name' => __('Main Sidebar', 'animalshelter',
+        'id' => 'main-sidebar',
+        'description' => __('Widgets', 'animalshelter'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section >',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+        )
+    );
+}
+add_action('widgets_init', 'animalshelter_widget_init');
