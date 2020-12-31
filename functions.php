@@ -35,7 +35,7 @@ add_action('wp_enqueue_scripts', 'animalshelter_scripts');
 
 function animalshelter_widget_init() {
     register_sidebar( array(
-        'name' => __('Main Sidebar', 'animalshelter',
+        'name' => __('Main Sidebar', 'animalshelter'),
         'id' => 'main-sidebar',
         'description' => __('Widgets', 'animalshelter'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
