@@ -13,10 +13,10 @@
             <a href="index.html"></a>
 
             <?php
-            wp_nav_menu(  ( $arg = array(
+            wp_nav_menu(   $arg = array(
                 'menu_class' => 'main-navigation',
                 'theme_location' => 'primary'
-            )) )
+            ) )
             ?>
 
         </nav>

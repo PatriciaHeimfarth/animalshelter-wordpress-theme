@@ -18,8 +18,9 @@ function register_animalshelter_menus() {
             'footer' => __('Footer Menu')
         )
     );
-    add_action('init', 'register_animalshelter_menus');
 }
+    add_action('init', 'register_animalshelter_menus');
+
 
 /* Stylesheets */
 
