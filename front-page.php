@@ -1,7 +1,6 @@
 <?php
 /* The Homepage */
-get_header()
-
+get_header();
 ?>
  <div class="row">
         <div class="side">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
