@@ -10,6 +10,11 @@ endif;
 add_action('after_setup_theme', 'animalshelter_setup');
 
 /* Menus */
+function register_navwalker(){
+	require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
 
 function register_animalshelter_menus()
 {
@@ -62,3 +67,4 @@ function animalshelter_widget_init()
     ));
 }
 add_action('widgets_init', 'animalshelter_widget_init');
+
