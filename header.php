@@ -9,8 +9,8 @@
 
 <body> 
     <header class="header">
-        <nav class="main-navigation-container">
-            <a href="index.html"></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">Home</a>
 
             <?php
             wp_nav_menu(   $arg = array(
