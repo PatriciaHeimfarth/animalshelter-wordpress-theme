@@ -16,8 +16,11 @@ get_header();
     $loop = new WP_Query( $args ); 
         
     while ( $loop->have_posts() ) : $loop->the_post(); 
-        if(has_post_thumbnail( )){         
-            the_post_thumbnail('full' );
+        if(has_post_thumbnail( )){   ?>
+        <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>">      
+        <?php the_post_thumbnail('full' ); ?>
+        </a>
+        <?php
         }
        
     endwhile;
