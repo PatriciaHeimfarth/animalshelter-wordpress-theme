@@ -17,7 +17,7 @@
                     <?php endif; ?>
                 </div>
                 <div class="medium-6 columns">
-                    <?php the_animal_price(get_the_ID()); ?>
+                    <?php //the_animal_species(get_the_ID()); ?>
                 </div>
             </div>
 
