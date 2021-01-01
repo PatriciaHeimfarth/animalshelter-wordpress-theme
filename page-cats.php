@@ -2,7 +2,6 @@
 get_header();
 ?>
 <div class="main-wrap" role="main">
- <h1>Cats</h1>
  <section id="animal-listing">
      <?php  $args = array(  
         'post_type' => 'animal',
