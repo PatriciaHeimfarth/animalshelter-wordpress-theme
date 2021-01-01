@@ -83,8 +83,10 @@ function animalmeta() {
 
 	$species = get_post_meta( $post->ID, 'species', true );
 
-	echo '<input type="text" name="species" value="' . esc_textarea( $species )  . '" class="widefat">';
-
+    //echo '<input type="text" name="species" value="' . esc_textarea( $species )  . '" class="widefat">';
+    echo '<select name="species" class="widefat" ><option value="dog"'; if ($species == 'dog') echo ' selected="selected"';
+    echo '>Dog</option><option value="cat"'; if ($species == 'cat') echo ' selected="selected"';
+    echo'>Cat</option></select>';
 }
 
 function wpt_save_animal_meta( $post_id, $post ) {
@@ -95,8 +97,9 @@ function wpt_save_animal_meta( $post_id, $post ) {
     
 	if ( ! isset( $_POST['species'] ) || ! wp_verify_nonce( $_POST['animal_fields'], basename(__FILE__) ) ) {
 		return $post_id;
-	}
-	$animal_meta['species'] = esc_textarea( $_POST['species'] );
+    }
+    
+	$animal_meta['species'] =  $_POST['species'] ;
 
 	foreach ( $animal_meta as $key => $value ) :
 
