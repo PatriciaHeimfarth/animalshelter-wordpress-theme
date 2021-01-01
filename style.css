@@ -78,8 +78,11 @@ body {
 }
 
 #animal-listing img:hover {
-
     opacity: 0.5;
+}
+
+#animal-listing  {
+    text-align: center;
 }
   
 
