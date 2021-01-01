@@ -2,7 +2,7 @@
 get_header();
 ?>
 <div class="main-wrap" role="main">
- <h1>Dogs Heading</h1>
+ <h1>Dogs</h1>
  <section id="animal-listing">
      <?php  $args = array(  
         'post_type' => 'animal',
@@ -15,8 +15,10 @@ get_header();
     $loop = new WP_Query( $args ); 
         
     while ( $loop->have_posts() ) : $loop->the_post(); 
-        print the_title(); 
-        the_excerpt(); 
+        if(has_post_thumbnail( )){
+            the_post_thumbnail( 'medium', array( 'class' => 'alignleft' ) );
+        }
+       
     endwhile;
 
     wp_reset_postdata(); ?>

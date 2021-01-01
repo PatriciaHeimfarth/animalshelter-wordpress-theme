@@ -27,6 +27,7 @@ function register_animalshelter_menus()
 }
 add_action('init', 'register_animalshelter_menus');
 
+add_theme_support( 'post-thumbnails' );
 
 /* Stylesheets */
 
