@@ -8,7 +8,9 @@ get_header();
         'post_status' => 'publish',
         'posts_per_page' => 8, 
         'orderby' => 'title', 
-        'order' => 'ASC', 
+        'order' => 'ASC',
+        'meta_key' => 'species',
+        'meta_value' => 'dog'
     );
 
     $loop = new WP_Query( $args ); 

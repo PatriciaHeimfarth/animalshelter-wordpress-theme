@@ -9,6 +9,9 @@ get_header();
         'posts_per_page' => 8, 
         'orderby' => 'title', 
         'order' => 'ASC', 
+        'meta_key' => 'species',
+        'meta_value' => 'cat'
+      
     );
 
     $loop = new WP_Query( $args ); 
