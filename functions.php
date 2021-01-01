@@ -68,3 +68,7 @@ function animalshelter_widget_init()
 }
 add_action('widgets_init', 'animalshelter_widget_init');
 
+/* Custom Post Type */
+require_once( 'post_types/animal.php' );
+
+ 
