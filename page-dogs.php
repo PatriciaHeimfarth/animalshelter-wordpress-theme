@@ -15,13 +15,13 @@ get_header();
     $loop = new WP_Query( $args ); 
         
     while ( $loop->have_posts() ) : $loop->the_post(); 
-        if(has_post_thumbnail( )){
-            the_post_thumbnail( 'medium', array( 'class' => 'alignleft' ) );
+        if(has_post_thumbnail( )){         
+            the_post_thumbnail('full' );
         }
        
     endwhile;
 
-    wp_reset_postdata(); ?>
+    ?>
  </section>
 
 </div>
