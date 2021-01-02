@@ -73,7 +73,7 @@ Description: Theme for animal shelters
 
 #animal-listing img {
     border-radius: 8px;
-    width: 300px;
+    width: auto;
     height: 300px;
     margin:1%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
