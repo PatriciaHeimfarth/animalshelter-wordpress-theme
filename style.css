@@ -32,15 +32,15 @@ Description: Theme for animal shelters
 .side {
     flex: 20%;
     background-color: #f5b1e6;
-    padding: 20px;
-    margin-left:5%; 
+     
+    margin-left:5%;    
 }
 
 .main {
     flex: 70%;
     background-color: white;
     padding: 20px;
-   
+    margin-right: 5%;
 }
 /* Footer */
 
@@ -52,10 +52,8 @@ Description: Theme for animal shelters
     position: fixed;
     top: auto;
     bottom: 0;
-    width: 80%;
-    margin-bottom: 0;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    margin-bottom: 0;  
 }
 
 .footer li {
