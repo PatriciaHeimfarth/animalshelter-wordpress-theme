@@ -54,10 +54,19 @@ Description: Theme for animal shelters
     bottom: 0;
     width: 100%;
     margin-bottom: 0;  
+    font-family: 'ABeeZee', sans-serif;
+    
 }
 
 .footer li {
     list-style-type: none;
+     
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size:x-large;
 }
 
 /* Animals */
