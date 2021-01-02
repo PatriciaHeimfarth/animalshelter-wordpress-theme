@@ -34,13 +34,15 @@ add_theme_support( 'post-thumbnails' );
 function animalshelter_scripts()
 {
     wp_enqueue_style('animalshelter_styles', get_stylesheet_uri());
-    // wp_enqueue_style( 'animalshelter_google_fonts', '');
+    wp_enqueue_style('animalshelter_google_fonts', 
+    'https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
     wp_enqueue_style(
         'bootstrap',
         get_template_directory_uri() . '/css/bootstrap.min.css',
         array(),
         '5.0.0'
     );
+
 
     wp_enqueue_script(
         'bootstrap',

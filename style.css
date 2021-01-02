@@ -17,12 +17,7 @@ Description: Theme for animal shelters
     }
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: rgb(155, 216, 245);
-}
+ 
 
 .header {
     text-align: center;
@@ -100,6 +95,8 @@ body {
 
 .carousel {
     padding: 1%;
+    font-family: 'ABeeZee', sans-serif;
+    
 }
 
 .carousel-caption {
