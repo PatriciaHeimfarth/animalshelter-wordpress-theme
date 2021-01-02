@@ -61,6 +61,12 @@ body {
     text-align: center;
     background: rgb(102, 136, 146);
     color: white;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+   
 }
 
 /* Animals */
