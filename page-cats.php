@@ -6,7 +6,7 @@ get_header();
         <?php $args = array(
             'post_type' => 'animal',
             'post_status' => 'publish',
-            'posts_per_page' => 8,
+            'posts_per_page' => 800,
             'orderby' => 'title',
             'order' => 'ASC',
             'meta_key' => 'species',
