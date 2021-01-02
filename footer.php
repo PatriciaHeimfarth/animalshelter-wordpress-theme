@@ -1,5 +1,5 @@
 <footer class="footer">
-    <nav class="main-navigation-container">
+    <nav >
         <a href="index.html"></a>
 
         <?php
